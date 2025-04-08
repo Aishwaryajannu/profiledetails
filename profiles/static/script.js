@@ -17,7 +17,7 @@
         document.getElementById("profile-email").innerHTML = `<a href="mailto:${data.email}">${data.email}</a>`;
         document.getElementById("profile-phone").textContent = data.phone;
         document.getElementById("profile-address").textContent = data.address;
-        document.getElementById("profile-linkedin").innerHTML = `<a href="${data.linkedin}" target="_blank">LinkedIn</a>`;
+        document.getElementById("profile-linkedin").innerHTML = `<a href="${data.linkedin}" target="_blank">${data.name}</a>`;
         document.getElementById("company-link").href = data.company_link;
       })
       .catch((err) => {
