@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+  <div class="card">
+    <img id="profile-img" src="" alt="Profile" />
+    <h2 id="profile-name">Loading...</h2>
+    <p class="designation" id="profile-role"></p>
+
+    <p class="info"><strong>Email:</strong> <span id="profile-email"></span></p>
+    <p class="info"><strong>Phone:</strong> <span id="profile-phone"></span></p>
+    <p class="info"><strong>Address:</strong> <span id="profile-address"></span></p>
+    <p class="info"><strong>LinkedIn:</strong> <span id="profile-linkedin"></span></p>
+
+    <a class="company-link" id="company-link" href="#" target="_blank">
+      Learn more about Acespire Consulting
+    </a>
+  </div>
+
+  <script src="{% static 'script.js' %}"></script>
+</body>
+</html>
